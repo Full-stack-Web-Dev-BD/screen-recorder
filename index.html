@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Simple Screen Record!</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h1>Screen Record  App  </h1>
+  <p id="warning">Screen Record  App  </p>
+
+  <p id="uploaded_link" style="display: none;" > <strong id="">Uploaded done</strong> <a id="link">Click me to find Video</a> </p>
+  <h4 id="st"></h4>
+
+  <div class="time">
+    <div class="timeHolder">
+      <span id="hour">00</span>
+      <span> : </span>
+      <span id="minute">00</span>
+      <span> : </span>
+      <span id="second">00</span>
+    </div>
+  </div>
+  <div class="recorderComponent">
+    <video style="display: none;" id="videoElement" autoplay muted></video>
+    <!-- <p>Preview</p> -->
+    <div class="btnHolder">
+      <button id="captureBtn">Start</button>
+      <button style="display: none;" id="startBtn">Start </button>
+      <button style="display: none;" id="stopBtn" disabled>Stop </button>
+      <button style="display: none;" id="puseBtn">puse </button>
+      <button style="display: none;" id="resumeBtn"> resume </button>
+      <a id="download" href="#" style="display: none;">
+        <button>Download</button>
+      </a>
+    </div>
+  </div>
+  <script src="./axios.js"></script>
+  <script   src="./script.js" ></script>
+</body>
+
+</html>
