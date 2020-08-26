@@ -160,13 +160,13 @@ window.onload = () => {
       //blobs.push(MediaRecorder.requestData());
       blob = new Blob(blobs, {type: 'video/mp4'});
       let url = window.URL.createObjectURL(blob);
-      var  videoObj=new FormData()
-      videoObj.append('video',blob)
-      uploadVideo(videoObj)
-      // download.href = url;
-      // download.download = 'test.mp4';
-      // download.style.display = 'block';
-      // download.click()
+      // var  videoObj=new FormData()
+      // videoObj.append('video',blob)
+      // uploadVideo(videoObj)
+      download.href = url;
+      download.download = 'test.mp4';
+      download.style.display = 'block';
+      download.click()
     };
     startBtn.disabled = false;
     captureBtn.disabled = true;
